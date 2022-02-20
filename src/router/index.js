@@ -1,18 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
-import DemoStart from '../views/DemoStart.vue'
+import StartView from '../views/StartView.vue'
+import MakerView from '../views/MakerView.vue'
+import TakerView from '../views/TakerView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView,
-  },
   {
     path: '/about',
     name: 'about',
@@ -21,8 +17,18 @@ const routes = [
   {
     path: '/start',
     name: 'start',
-    component: DemoStart,
-  }
+    component: StartView,
+  },
+  {
+    path: '/maker',
+    name: 'maker',
+    component: MakerView,
+  },
+  {
+    path: '/taker',
+    name: 'taker',
+    component: TakerView,
+  },
 
 ]
 
